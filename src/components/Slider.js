@@ -16,19 +16,39 @@ export default class SimpleSlider extends Component {
         <h2> Single Item</h2>
         <Slider {...settings}>
           <div class="image-box">
-            <img class="image-thumbnail" src="/img/slide0.jpg"></img>
+            <img
+              class="image-thumbnail"
+              src="/img/slide0.jpg"
+              alt="slide"
+            ></img>
           </div>
           <div class="image-box">
-            <img class="image-thumbnail" src="/img/slide1.jpg"></img>
+            <img
+              class="image-thumbnail"
+              src="/img/slide1.jpg"
+              alt="slide"
+            ></img>
           </div>
           <div class="image-box">
-            <img class="image-thumbnail" src="/img/slide2.jpg"></img>
+            <img
+              class="image-thumbnail"
+              src="/img/slide2.jpg"
+              alt="slide"
+            ></img>
           </div>
           <div class="image-box">
-            <img class="image-thumbnail" src="/img/slide3.jpg"></img>
+            <img
+              class="image-thumbnail"
+              src="/img/slide3.jpg"
+              alt="slide"
+            ></img>
           </div>
           <div class="image-box">
-            <img class="image-thumbnail" src="/img/slide4.jpg"></img>
+            <img
+              class="image-thumbnail"
+              src="/img/slide4.jpg"
+              alt="slide"
+            ></img>
           </div>
         </Slider>
       </div>

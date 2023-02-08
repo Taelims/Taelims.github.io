@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import { Provider } from "react-redux";
 import { combineReducers, createStore } from "redux";
-import { reducer, reducer2 } from "./reducer.js";
+import { reducer, reducer2 } from "./store/reducer.js";
 
 let store = createStore(combineReducers({ reducer, reducer2 }));
 
