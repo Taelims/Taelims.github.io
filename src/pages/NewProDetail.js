@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import { connect } from "react-redux";
+import "../App.css";
 
 function NewProDetail(props) {
   let [tab, tab변경] = useState(0);
 
   let { id } = useParams();
   let selectPro = props.newPro.find(function (a) {
-    return (a.id = id);
+    return a.id == id;
   });
 
   let history = useHistory();
@@ -19,10 +20,7 @@ function NewProDetail(props) {
   };
 
   return (
-    <div className="container">
-      <br></br>
-      <br></br>
-      <br></br>
+    <div className="container product">
       <div className="row">
         <div className="col-md-6">
           <img src={"/img/new" + selectPro.id + ".jpg"} width="100%" alt="" />

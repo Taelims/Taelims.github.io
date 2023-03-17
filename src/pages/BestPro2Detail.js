@@ -19,12 +19,7 @@ function BestPro2Detail(props) {
   };
 
   return (
-    <div className="container">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+    <div className="container product">
       <div className="row">
         <div className="col-md-6">
           <img

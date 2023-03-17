@@ -45,14 +45,7 @@ function Login(props) {
   return (
     <div>
       <Form className="form" onSubmit={onSubmitHandler}>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <p className="login-logo">Login</p>
-        <br></br>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>이메일 주소</Form.Label>
           <Form.Control

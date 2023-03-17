@@ -5,11 +5,7 @@ function Mypage() {
   localStorage.getItem(1);
 
   return (
-    <div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+    <div className="form">
       <p>{localStorage.getItem(1)}님의 마이페이지</p>
     </div>
   );

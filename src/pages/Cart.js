@@ -1,6 +1,7 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
+import "../App.css";
 
 function Cart() {
   let state = useSelector((state) => state);
@@ -8,11 +9,8 @@ function Cart() {
   let sum = 0;
 
   return (
-    <div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Table responsive="sm">
+    <div className="cart">
+      <Table>
         <thead>
           <tr>
             <th>#</th>

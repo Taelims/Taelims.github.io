@@ -3,24 +3,22 @@ let 초기값 = [];
 function reducer(state = 초기값, 액션) {
   if (액션.type === "항목추가") {
     let found = state.findIndex(function (a) {
-      return (a.id = 액션.데이터.id);
+      return a.id == 액션.데이터.id;
     });
     if (액션.데이터.size === "") {
       alert("사이즈를 선택해주세요");
-    }
-    // else if(found >= 0){
-    //   let copy = [...state]
-    //   copy[액션.데이터.id].quan++;
-    //   return copy
-    // }
-    else {
+    } else if (found >= 0) {
+      let copy = [...state];
+      copy[액션.데이터.id].quan++;
+      return copy;
+    } else {
       let copy = [...state];
       copy.push(액션.데이터);
       return copy;
     }
   } else if (액션.type === "수량증가") {
     let found = state.findIndex(function (a) {
-      return (a.id = 액션.데이터);
+      return a.id == 액션.데이터;
     });
 
     let copy = [...state];
@@ -28,7 +26,7 @@ function reducer(state = 초기값, 액션) {
     return copy;
   } else if (액션.type === "수량감소") {
     let found = state.findIndex(function (a) {
-      return (a.id = 액션.데이터);
+      return a.id == 액션.데이터;
     });
 
     if (state[found].quan > 0) {
@@ -38,7 +36,7 @@ function reducer(state = 초기값, 액션) {
     }
   } else if (액션.type === "상품삭제") {
     let found = state.findIndex(function (a) {
-      return (a.id = 액션.데이터);
+      return a.id == 액션.데이터;
     });
 
     let copy = [...state];

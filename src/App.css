@@ -7,10 +7,25 @@
   color: gray;
 }
 .form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 500px;
   width: 400px;
-  display: inline-block;
-          text-align: center;
+  
+}
+
+.cart{
+  padding-top: 70px;
+  
+}
+
+.product{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
 }
 
 .login-logo{
@@ -35,9 +50,6 @@
   
 }
 
-
-
-/* Navbar */
 .navbar{
   width: 100%;
   position: fixed;

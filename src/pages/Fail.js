@@ -3,10 +3,7 @@ import "../App.css";
 
 function Fail() {
   return (
-    <div>
-      <br></br>
-      <br></br>
-      <br></br>
+    <div className="form">
       <p>fail</p>
     </div>
   );
